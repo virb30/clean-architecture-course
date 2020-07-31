@@ -14,6 +14,15 @@ Development of a survey application (with signIn and signup) using techniques li
 - Style guide (standard)
 - and others
 
+### Libraries
+
+- Typescript
+- Express
+- Bcrypt
+- MongoDb
+- Jest
+- Eslint
+
 ## Updates
 
 This is a project under construction.
@@ -33,3 +42,4 @@ Updates on this project will be added in time.
   - helpers: directory containing application helpers
   - protocols: directory containing protocol interfaces
 - utils: directory that holds general adapters
+- infra: directory containing implementations that uses external libraries
