@@ -34,20 +34,26 @@ Updates on this project will be added in time.
 
 ## Directory explanation
 
-- data: directory that represents application data layer
-  - protocols: directory containing protocol interfaces
-  - usecases: directory that holds the implementations of domain usecases
-- domain: directory that represents the application domain, is composed by:
-  - models: directory containing the application `entities`
-  - usecases: directory that holds the interface for manipulating the models
-- presentation: directory that represents the applications's presentation layer through which the user will interact
-  - controllers: directory that holds the handlers and protocols of user interactions
-  - errors: directory that centralizes the application errors
-  - helpers: directory containing application helpers
-  - protocols: directory containing protocol interfaces
-- utils: directory that holds general adapters
-- infra: directory containing implementations that uses external libraries
-- main: directory that represents the application main layer
+- **data**: directory that represents application data layer
+  - _protocols_: directory containing protocol interfaces
+  - _usecases_: directory that holds the implementations of domain usecases
+- **domain**: directory that represents the application domain, is composed by:
+  - _models_: directory containing the application `entities`
+  - _usecases_: directory that holds the interface for manipulating the models
+- **presentation**: directory that represents the applications's presentation layer through which the user will interact
+  - _controllers_: directory that holds the handlers and protocols of user interactions
+  - _errors_: directory that centralizes the application errors
+  - _helpers_: directory containing application helpers
+  - _protocols_: directory containing protocol interfaces
+- **utils**: directory that holds general adapters
+- **infra**: directory containing implementations that uses external libraries
+- **main**: directory that represents the application main layer
+  - _adapters_: directory containing adapters wich will isolate application of framework dependency
+  - _config_: contains configuration files
+  - _factories_: directory containing the controllers factories files
+  - _middlewares_: contains middlewares of application routes
+  - _routes_: directory containing application routes
+  - _server.ts_: main application file that starts the server
 
 ## Layers
 
@@ -57,10 +63,20 @@ Layer that instanciates all the other layers. This layer is highly coupled and k
 
 ### Data Layer
 
+Layer responsible to interface presentation and infra layers with the `persistence mechanism` (such as databases)
+
 ### Domain Layer
+
+Application core layer that holds all `business rules`
 
 ### Presentation Layer
 
+Layer responsible to `handle` user interactios
+
 ### Utils Layer
 
+Layer containing generic `utility files`
+
 ### Infra Layer
+
+Layer responsible to communicate with the proper external world dependencies (such criptography library, database engine)
