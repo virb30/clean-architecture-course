@@ -44,3 +44,20 @@ Updates on this project will be added in time.
   - protocols: directory containing protocol interfaces
 - utils: directory that holds general adapters
 - infra: directory containing implementations that uses external libraries
+- main: directory that represents the application main layer
+
+## Layers
+
+### Main Layer
+
+Layer that instanciates all the other layers, this layer knows all the others layers
+
+### Data Layer
+
+### Domain Layer
+
+### Presentation Layer
+
+### Utils Layer
+
+### Infra Layer
