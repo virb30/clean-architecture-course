@@ -23,6 +23,9 @@ Development of a survey application (with signIn and signup) using techniques li
 - Jest
 - Eslint
 - git (add, commit, stash, log, status)
+- @shef/jest-mongodb
+- supertest
+- sucrase
 
 ## Updates
 
@@ -50,7 +53,7 @@ Updates on this project will be added in time.
 
 ### Main Layer
 
-Layer that instanciates all the other layers, this layer knows all the others layers
+Layer that instanciates all the other layers. This layer is highly coupled and knows all the others layers
 
 ### Data Layer
 
