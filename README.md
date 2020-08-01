@@ -22,6 +22,7 @@ Development of a survey application (with signIn and signup) using techniques li
 - MongoDb
 - Jest
 - Eslint
+- git (add, commit, stash, log, status)
 
 ## Updates
 
